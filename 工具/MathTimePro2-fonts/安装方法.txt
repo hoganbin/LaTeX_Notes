@@ -1,0 +1,16 @@
+MathTime Pro 2 字体包，来自 PCTeX 公司。感谢 pertain@ctex.org 共享。
+
+texmf 目录中的内容是字体文件和对应的宏包、文档；
+templates 目录中是测试示例（MTPro2 LaTeX test.tex）和几个英文文章模板，可以在安装后编译测试。如果要方便以后看例子，可以把此目录复制到 texmf\doc\fonts\mtpro2 目录中。
+
+1、把 texmf 目录中的内容按结构复制到本地的 texmf 目录（对 TeX Live 就是 texmf-local，对 CTeX 套装就是 localtexmf，等等），事实上其中的 tpm 和 dvips 两个子目录可以删去；
+2、命令行运行 texhash；
+3.a、对 TeX Live，命令行运行
+    updmap-sys --enable Map=mtpro2.map
+    updmap --enable Map=mtpro2.map
+  b、对 MiKTeX（CTeX 套装、MiCTeX 等），命令行运行
+    initexmf --edit-config-file updmap
+在弹出的 updmap.cfg 文件末尾添加一行
+    Map mtpro2.map
+然后存盘退出。如果不行再运行 updmap。
+4、完成，可以编译 templates 目录中的测试文件进行测试了！

@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tw.edu.ntu.csie</groupId>
+  <artifactId>libsvm</artifactId>
+  <version>3.17</version>
+  <packaging>jar</packaging>
+  <name>LIBSVM</name>
+  <description>A Library for Support Vector Machines</description>
+  <url>http://www.csie.ntu.edu.tw/~cjlin/libsvm/</url>
+  <licenses>
+    <license>
+      <name>BSD 3-Clause License</name>
+      <url>http://www.csie.ntu.edu.tw/~cjlin/libsvm/COPYRIGHT</url>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz</url>
+    <connection>http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz</connection>
+  </scm>
+  <developers>
+    <developer>
+      <id>chih-jen.lin</id>
+      <name>Chih-Jen Lin</name>
+      <email>cjlin@csie.ntu.edu.tw</email>
+    </developer>
+  </developers>
+  <properties>
+    <maven.compiler.source>1.5</maven.compiler.source>
+    <maven.compiler.target>1.5</maven.compiler.target>
+    <encoding>UTF-8</encoding>
+  </properties>
+   <build>
+    <sourceDirectory>java</sourceDirectory>
+  </build>
+</project>

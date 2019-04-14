@@ -1,0 +1,12 @@
+tex百度云链接：https://pan.baidu.com/s/15dYyDflQCPVz_jlwEkngUw 密码：hz3r
+提醒：
+1.这个视频可以说是历史最详细了，遇到问题的话，反复看一下视频，不可能有问题
+2.实在不懂，看了n遍视频还是解决不了，或者你的问题视频里没有，再联系我，qq731596561
+3.有钱捧个钱场，没钱捧个人场，欢迎扫描二维码赞助，提意见，以供录制更多视频
+4.如果安装的时候不出现安装界面，解决办法是：win10系统Texlive2017安装及出现问题 -
+ CSDN博客  https://blog.csdn.net/qq_37701997/article/details/79169230
+5.禁止命名中文文件名，文件夹之类用中文，后果不堪设想
+6.学习网址Windows下TexLive2015 
+CSDN博客  https://blog.csdn.net/lizuoxin/article/details/48173907
+LaTeX科技排版工作室  http://www.latexstudio.net/
+q群文件 91940767  群文件很丰富	最强大的tex讨论群，没有之一

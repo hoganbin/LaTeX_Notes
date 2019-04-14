@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: kwong
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_162
+Main-Class: com.github.chungkwong.mathocr.Main
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<title>免费专业的latex数学公式</title>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+    cancel: ["Extension","cancel"],
+    bcancel: ["Extension","cancel"],
+    xcancel: ["Extension","cancel"],
+    cancelto: ["Extension","cancel"]
+  });
+});
+</script>
+
+
+<script>
+function SelectText(element) {
+var doc = document
+, text = doc.getElementById(element)
+, range, selection
+;    
+if (doc.body.createTextRange) {
+range = document.body.createTextRange();
+range.moveToElementText(text);
+range.select();
+} else if (window.getSelection) {
+selection = window.getSelection();        
+range = document.createRange();
+range.selectNodeContents(text);
+selection.removeAllRanges();
+selection.addRange(range);
+}
+}
+$(document).ready(function(){
+$("#latexContent").val("$$        $$");
+$('#latexContent').bind('input propertychange', function() {
+$("#myoutput").text($("#latexContent").val());
+// MathJax.Hub.Queue(["TypeseTextt",MathJax.Hub,"myoutput"]);
+MathJax.Hub.Typeset("myoutput")
+});
+$("#btnShowMathML").click(function(){
+var con =  $(".MJX_Assistive_MathML").html();
+$("#myMathml").text(con);
+SelectText("myMathml");
+});
+$("#btnClear").click(function(){
+$("#latexContent").val("$$        $$");
+$("#myoutput").html("<p style='color: grey; font-style: italic;'> 我即将变成latex公式 ! </p>");
+$("#myMathml").text(" ");
+});
+
+});
+</script>
+</head>
+<body>
+<center>
+<p><a href="https://kz16.top">课中引路网</a>温馨提示：无格式粘贴Mathjax代码到word就可以显示公式了，不支持WPS</p>
+<p>什么，latex居然不会！在框中的美元符号中输入&nbsp; &nbsp;&nbsp;  \cancel{S = \pi R}  &nbsp; &nbsp;&nbsp;试试</p>
+<p> &nbsp;</p>
+<p> &nbsp;</p>
+<p>下面这行输入latex公式，<a href="https://en.wikibooks.org/w/index.php?title=LaTeX/Mathematics&stable=1">latex模板</a></p>
+<textarea id="latexContent" rows="8" cols="100"> </textarea>
+<p> &nbsp;</p>
+<button id="btnClear" type="button">清除</button>
+<button id="btnShowMathML" type="button">显示Mathjax</button> </br></br>
+<span id="myoutput">
+<p style="color: grey; font-style: italic;"> latex公式显示如下 </p>
+</span> </br>
+<span id="myMathml"> </span>
+
+
+
+
+</body>
+</html>

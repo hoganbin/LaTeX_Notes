@@ -1,0 +1,1 @@
+https://github.com/texstudio-org/texstudio/releases/download/2.12.10/texstudio-2.12.10-win-qt5.exe
